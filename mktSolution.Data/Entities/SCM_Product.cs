@@ -15,5 +15,10 @@ namespace mktSolution.Data.Entities
         public DateTime DateProduct { set; get; }
         public string Type { set; get; }
         public Status Status { set; get; }
+        public int CreateBy { set; get; }
+        public DateTime CreateDate { set; get; }
+        public int UpdateBy { set; get; }
+        public DateTime UpdateDate { set; get; }
+        public SCM_Order SCM_Order { set; get; }
     }
 }
