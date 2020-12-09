@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using mktSolution.Data.EF;
 
 namespace mktSolution.Data.Migrations
 {
     [DbContext(typeof(MktDbContext))]
-    partial class MktDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201209181131_addIdentitytable")]
+    partial class addIdentitytable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -92,13 +94,6 @@ namespace mktSolution.Data.Migrations
                     b.HasKey("UserId", "RoleId");
 
                     b.ToTable("AppUserRoles");
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"),
-                            RoleId = new Guid("8d04dce2-969a-435d-bba4-df3f325983dc")
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<System.Guid>", b =>
@@ -143,16 +138,6 @@ namespace mktSolution.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("AppRoles");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"),
-                            ConcurrencyStamp = "334d98e7-d8b2-491c-bd32-56c61de5784d",
-                            Description = "Administrator role",
-                            Name = "admin",
-                            NormalizedName = "admin"
-                        });
                 });
 
             modelBuilder.Entity("mktSolution.Data.Entities.AppUser", b =>
@@ -216,26 +201,6 @@ namespace mktSolution.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("AppUsers");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"),
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "52844af0-1fac-4828-a55d-5120343cbbd3",
-                            Dept = "SE",
-                            Ecode = "110176",
-                            Email = "MKV.international@gmail.com",
-                            EmailConfirmed = true,
-                            LockoutEnabled = false,
-                            NormalizedEmail = "MKV.international@gmail.com",
-                            NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEG2N1QKDupqAhbEtvnTQhK+/XT2jpxtDG53FBUZ7dEeAXiQfePbFQJLp301fBtJIqA==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "",
-                            TwoFactorEnabled = false,
-                            UserName = "admin"
-                        });
                 });
 
             modelBuilder.Entity("mktSolution.Data.Entities.SCM_Calendar", b =>
@@ -272,7 +237,7 @@ namespace mktSolution.Data.Migrations
                     b.Property<DateTime>("CreateDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2020, 12, 10, 1, 12, 36, 531, DateTimeKind.Local).AddTicks(1288));
+                        .HasDefaultValue(new DateTime(2020, 12, 10, 1, 11, 30, 963, DateTimeKind.Local).AddTicks(3226));
 
                     b.Property<DateTime>("DueDate")
                         .HasColumnType("datetime2");
@@ -320,7 +285,7 @@ namespace mktSolution.Data.Migrations
                     b.Property<DateTime>("CreateDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2020, 12, 10, 1, 12, 36, 546, DateTimeKind.Local).AddTicks(3842));
+                        .HasDefaultValue(new DateTime(2020, 12, 10, 1, 11, 30, 978, DateTimeKind.Local).AddTicks(7360));
 
                     b.Property<DateTime>("DateProduct")
                         .HasColumnType("datetime2");
