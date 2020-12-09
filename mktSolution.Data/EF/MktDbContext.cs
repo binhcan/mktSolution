@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using mktSolution.Data.Configuration;
 using mktSolution.Data.Entities;
+using mktSolution.Data.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -14,9 +15,13 @@ namespace mktSolution.Data.EF
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //configure using Fluent API
             modelBuilder.ApplyConfiguration(new SCM_OrderConfiguration());
             modelBuilder.ApplyConfiguration(new SCM_ProductConfiguration());
             modelBuilder.ApplyConfiguration(new SCM_CalendarConfiguration());
+
+            //Data seeding
+            modelBuilder.Seed();
 
             //base.OnModelCreating(modelBuilder);
         }
