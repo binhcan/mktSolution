@@ -14,11 +14,14 @@ namespace mktSolution.Data.Configuration
         {
             builder.ToTable("SCM_Orders");
             builder.HasKey(x => x.IdOrder);
+            builder.Property(x => x.IdOrder).UseIdentityColumn();
             builder.Property(x => x.ModelName).IsRequired().HasMaxLength(50);
             builder.Property(x => x.Qty).IsRequired();
             builder.Property(x => x.Type).HasDefaultValue("Order");
             builder.Property(x => x.Status).HasDefaultValue(Status.Active);
             builder.Property(x => x.CreateDate).HasDefaultValue(DateTime.Now);
+
+            //builder.HasOne(x => x.AppUser).WithMany(x => x.SCM_Orders).HasForeignKey(x => x.UserId);
         }
     }
 }

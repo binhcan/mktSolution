@@ -24,6 +24,7 @@ namespace mktSolution.Data.Configuration
             builder.Property(x => x.Status).HasDefaultValue(Status.Active);
             builder.Property(x => x.CreateDate).HasDefaultValue(DateTime.Now);
 
+           // builder.HasOne(x => x.AppUser).WithMany(x => x.SCM_Products).HasForeignKey(x => x.UserId);
            
         }
     }
