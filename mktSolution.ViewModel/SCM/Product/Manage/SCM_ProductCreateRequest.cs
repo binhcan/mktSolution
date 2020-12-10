@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace mktSolution.Application.SCM.Product.Dtos.Manage
+namespace mktSolution.ViewModel.SCM.Product.Manage
 {
     public class SCM_ProductCreateRequest
     {

@@ -14,7 +14,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mktSolution.Data", "mktSolu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mktSolution.Application", "mktSolution.Application\mktSolution.Application.csproj", "{1642F0AB-28E5-4C92-80AD-83B783ED77D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mktSolution.Utilities", "mktSolution.Utinities\mktSolution.Utilities.csproj", "{6F9445DF-F018-4B39-8259-1473E6987878}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mktSolution.Utilities", "mktSolution.Utinities\mktSolution.Utilities.csproj", "{6F9445DF-F018-4B39-8259-1473E6987878}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mktSolution.ViewModel", "mktSolution.ViewModel\mktSolution.ViewModel.csproj", "{C438EA35-E4D7-4864-8ADF-6410F6EC54D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{6F9445DF-F018-4B39-8259-1473E6987878}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F9445DF-F018-4B39-8259-1473E6987878}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F9445DF-F018-4B39-8259-1473E6987878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C438EA35-E4D7-4864-8ADF-6410F6EC54D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C438EA35-E4D7-4864-8ADF-6410F6EC54D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C438EA35-E4D7-4864-8ADF-6410F6EC54D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C438EA35-E4D7-4864-8ADF-6410F6EC54D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace mktSolution.Application.SCM.Dtos
+namespace mktSolution.ViewModel.Commons.SCM
 {
     public class SCM_PageResult<T>
     {

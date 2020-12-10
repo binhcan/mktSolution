@@ -1,6 +1,6 @@
-﻿using mktSolution.Application.SCM.Dtos;
-using mktSolution.Application.SCM.Product.Dtos;
-using mktSolution.Application.SCM.Product.Dtos.Manage;
+﻿using mktSolution.ViewModel.Commons.SCM;
+using mktSolution.ViewModel.SCM.Product;
+using mktSolution.ViewModel.SCM.Product.Manage;
 using System;
 using System.Collections.Generic;
 using System.Text;

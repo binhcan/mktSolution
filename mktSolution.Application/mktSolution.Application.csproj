@@ -7,6 +7,7 @@
   <ItemGroup>
     <ProjectReference Include="..\mktSolution.Data\mktSolution.Data.csproj" />
     <ProjectReference Include="..\mktSolution.Utinities\mktSolution.Utilities.csproj" />
+    <ProjectReference Include="..\mktSolution.ViewModel\mktSolution.ViewModel.csproj" />
   </ItemGroup>
 
 </Project>
