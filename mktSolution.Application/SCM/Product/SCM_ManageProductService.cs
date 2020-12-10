@@ -1,9 +1,9 @@
-﻿using mktSolution.Application.SCM.Dtos;
-using mktSolution.Application.SCM.Product.Dtos;
-using mktSolution.Application.SCM.Product.Dtos.Manage;
-using mktSolution.Data.EF;
+﻿using mktSolution.Data.EF;
 using mktSolution.Data.Entities;
 using mktSolution.Utilities.Exceptions;
+using mktSolution.ViewModel.Commons.SCM;
+using mktSolution.ViewModel.SCM.Product;
+using mktSolution.ViewModel.SCM.Product.Manage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +19,7 @@ namespace mktSolution.Application.SCM.Product
         {
             _context = context;
         }
+
         public async Task<int> Create(SCM_ProductCreateRequest request)
         {
             var product = new SCM_Product()
@@ -47,13 +48,8 @@ namespace mktSolution.Application.SCM.Product
             throw new NotImplementedException();
         }
 
-        public async Task<SCM_PageResult<SCM_ProductViewModel>> GetAllPaging(SCM_GetProductPagingRequest request)
+        public Task<SCM_PageResult<SCM_ProductViewModel>> GetAllPaging(SCM_GetProductPagingRequest request)
         {
-            ////1. Select join
-            //var query = "";
-            ////2. filter
-            //if (!string.IsNullOrEmpty(request.KeyWord))
-            //    query = query.Where(x=>x.)
             throw new NotImplementedException();
         }
 
@@ -63,7 +59,7 @@ namespace mktSolution.Application.SCM.Product
             if (product == null) throw new MktException($"cannot find product with id: {request.IdProduct}");
             product.Jobname = request.Jobname;
             product.ModelName = request.ModelName;
-            product.Status = request.Status;
+            //product.Status = request.Status;
             product.DateProduct = request.DateProduct;
             product.UpdateDate = DateTime.Now;
 
@@ -77,6 +73,11 @@ namespace mktSolution.Application.SCM.Product
 
             product.Qty = newQty;
             return await _context.SaveChangesAsync() > 0;
+        }
+
+        Task<List<SCM_ProductViewModel>> I_SCM_ManageProductService.GetAll()
+        {
+            throw new NotImplementedException();
         }
     }
 }

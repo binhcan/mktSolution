@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace mktSolution.Application.SCM.Product.Dtos.Manage
+namespace mktSolution.ViewModel.SCM.Product
 {
-    public class SCM_ProductUpdateRequest
+    public class SCM_ProductViewModel
     {
         public int IdProduct { set; get; }
         public int IdOrder { set; get; }

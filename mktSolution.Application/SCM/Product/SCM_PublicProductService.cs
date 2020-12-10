@@ -1,7 +1,7 @@
-﻿using mktSolution.Application.SCM.Dtos;
-using mktSolution.Application.SCM.Product.Dtos;
-using mktSolution.Application.SCM.Product.Dtos.Public;
-using mktSolution.Data.EF;
+﻿using mktSolution.Data.EF;
+using mktSolution.ViewModel.Commons.SCM;
+using mktSolution.ViewModel.SCM.Product;
+using mktSolution.ViewModel.SCM.Product.Manage;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -15,13 +15,9 @@ namespace mktSolution.Application.SCM.Product
         {
             _context = context;
         }
+
         public SCM_PageResult<SCM_ProductViewModel> GetAllByProductId(SCM_GetProductPagingRequest request)
         {
-            //var query = from p in _context.SCM_Products
-            //            join od in _context.SCM_Orders on p.OrderId equals od.OrderId
-            //            select new { p, od };
-
-
             throw new NotImplementedException();
         }
     }
