@@ -3,7 +3,6 @@ using mktSolution.Data.Entities;
 using mktSolution.Utilities.Exceptions;
 using mktSolution.ViewModel.Commons.SCM;
 using mktSolution.ViewModel.SCM.Product;
-using mktSolution.ViewModel.SCM.Product.Manage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,7 +47,7 @@ namespace mktSolution.Application.SCM.Product
             throw new NotImplementedException();
         }
 
-        public Task<SCM_PageResult<SCM_ProductViewModel>> GetAllPaging(SCM_GetProductPagingRequest request)
+        public Task<SCM_PageResult<SCM_ProductViewModel>> GetAllPaging(SCM_GetPublicProductPagingRequest request)
         {
             throw new NotImplementedException();
         }

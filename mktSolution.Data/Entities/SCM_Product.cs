@@ -18,8 +18,8 @@ namespace mktSolution.Data.Entities
         public int CreateBy { set; get; }
         //public Guid UserId { set; get; }
         public DateTime CreateDate { set; get; }
-        public int UpdateBy { set; get; }
-        public DateTime UpdateDate { set; get; }
+        public int? UpdateBy { set; get; }
+        public DateTime? UpdateDate { set; get; }
         public SCM_Order SCM_Order { set; get; }
         //public AppUser AppUser { set; get; }
     }

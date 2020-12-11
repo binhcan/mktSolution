@@ -10,5 +10,10 @@
 	- Microsoft.Extensions.Configuration.FileExtensions
 	- Microsoft.Extensions.Configuration.Json
 
+	- Microsoft.AspNetCore.Identity.EntityFramewoekCore
+
+	- Swashbuckle.AspNetCore
+
+
 ## Config and run
 ## Contribute
