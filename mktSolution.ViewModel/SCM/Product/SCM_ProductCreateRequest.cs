@@ -1,9 +1,8 @@
-﻿using mktSolution.Data.Enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace mktSolution.ViewModel.SCM.Product.Manage
+namespace mktSolution.ViewModel.SCM.Product
 {
     public class SCM_ProductCreateRequest
     {

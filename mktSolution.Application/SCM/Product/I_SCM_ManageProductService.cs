@@ -1,6 +1,5 @@
 ﻿using mktSolution.ViewModel.Commons.SCM;
 using mktSolution.ViewModel.SCM.Product;
-using mktSolution.ViewModel.SCM.Product.Manage;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -15,7 +14,7 @@ namespace mktSolution.Application.SCM.Product
         Task<bool> UpdateQty(int productID, int newQty);
         Task<int> Delete(int productID);
         Task<List<SCM_ProductViewModel>> GetAll();
-        Task<SCM_PageResult<SCM_ProductViewModel>> GetAllPaging(SCM_GetProductPagingRequest request);
+        Task<SCM_PageResult<SCM_ProductViewModel>> GetAllPaging(SCM_GetPublicProductPagingRequest request);
 
     }
 }

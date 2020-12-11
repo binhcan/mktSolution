@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\mktSolution.Application\mktSolution.Application.csproj" />
+    <ProjectReference Include="..\mktSolution.Data\mktSolution.Data.csproj" />
+    <ProjectReference Include="..\mktSolution.Utinities\mktSolution.Utilities.csproj" />
+    <ProjectReference Include="..\mktSolution.ViewModel\mktSolution.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>
